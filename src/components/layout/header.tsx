@@ -61,8 +61,20 @@ export default function Header() {
 
       {/* Main Navigation */}
       <div className="container flex h-24 items-center">
+        <div className="flex items-center">
+          <Link href="/" className="flex items-center space-x-2">
+            <Image
+              src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
+              alt="Royal School of Learning Logo"
+              width={80}
+              height={80}
+              className="h-20 w-20"
+            />
+          </Link>
+        </div>
+        
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium ml-auto">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
@@ -78,22 +90,9 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        
-        <div className="ml-auto flex items-center">
-          <Link href="/" className="flex items-center space-x-2">
-            <Image
-              src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
-              alt="Royal School of Learning Logo"
-              width={80}
-              height={80}
-              className="h-20 w-20"
-            />
-          </Link>
-        </div>
-
 
         {/* Mobile Navigation */}
-        <div className="flex flex-1 items-center justify-start space-x-4 md:hidden">
+        <div className="flex flex-1 items-center justify-end space-x-4 md:hidden">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost">
@@ -150,17 +149,6 @@ export default function Header() {
               </div>
             </SheetContent>
           </Sheet>
-        </div>
-        <div className="md:hidden ml-auto">
-           <Link href="/" className="flex items-center space-x-2">
-            <Image
-              src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
-              alt="Royal School of Learning Logo"
-              width={80}
-              height={80}
-              className="h-20 w-20"
-            />
-          </Link>
         </div>
       </div>
     </header>
