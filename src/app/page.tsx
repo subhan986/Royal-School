@@ -83,7 +83,7 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-20 lg:py-32 bg-slate-50">
+        <section id="about" className="py-20 lg:py-32 bg-background">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl md:text-5xl font-headline font-bold text-center mb-16">
               Our Core Values
@@ -207,7 +207,7 @@ export default function Home() {
         </section>
 
         {/* Gallery Preview Section */}
-        <section className="py-20 lg:py-32 bg-slate-50">
+        <section className="py-20 lg:py-32 bg-background">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl md:text-5xl font-headline font-bold text-center mb-16">
               Campus Life
@@ -268,5 +268,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
