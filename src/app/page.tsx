@@ -55,7 +55,8 @@ export default function Home() {
         <section className="relative bg-secondary overflow-hidden">
           <div className="relative h-[60vh] md:h-[70vh]">
             <div className="absolute inset-0 bg-primary z-0">
-              <div className="absolute -right-1/4 top-0 h-full w-1/2 bg-secondary transform -skew-x-12"></div>
+              <div className="absolute inset-y-0 left-0 w-1/2 bg-secondary animate-slide-in-left"></div>
+              <div className="absolute inset-y-0 right-0 w-1/2 bg-primary animate-slide-in-right"></div>
                 <div
                   className="absolute inset-0"
                   style={{
