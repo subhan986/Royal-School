@@ -60,7 +60,7 @@ export default function Header() {
       </div>
 
       {/* Main Navigation */}
-      <div className="container flex h-24 items-center justify-between">
+      <div className="container flex h-24 items-center">
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           {NAV_LINKS.map((link) => (
@@ -79,8 +79,8 @@ export default function Header() {
           ))}
         </nav>
         
-        <div className="flex items-center">
-          <Link href="/" className="ml-auto flex items-center space-x-2">
+        <div className="ml-auto flex items-center">
+          <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
               alt="Royal School of Learning Logo"
@@ -151,8 +151,8 @@ export default function Header() {
             </SheetContent>
           </Sheet>
         </div>
-        <div className="md:hidden">
-           <Link href="/" className="ml-auto flex items-center space-x-2">
+        <div className="md:hidden ml-auto">
+           <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
               alt="Royal School of Learning Logo"
