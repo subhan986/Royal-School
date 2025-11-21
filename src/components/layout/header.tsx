@@ -62,7 +62,7 @@ export default function Header() {
       {/* Main Navigation */}
       <div className="container flex h-24 items-center">
         <div className="mr-4 flex">
-          <Link href="/" className="-ml-4 flex items-center space-x-2">
+          <Link href="/" className="ml-0 flex items-center space-x-2">
             <Image
               src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
               alt="Royal School of Learning Logo"
