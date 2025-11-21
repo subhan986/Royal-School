@@ -53,70 +53,38 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative bg-secondary overflow-hidden">
-          <Carousel
-            className="w-full"
-            opts={{ loop: true }}
-          >
-            <CarouselContent>
-              <CarouselItem>
-                <div className="relative h-[60vh] md:h-[70vh]">
-                  <div className="absolute inset-0 bg-primary z-0">
-                    <div className="absolute -right-1/4 top-0 h-full w-1/2 bg-secondary transform -skew-x-12"></div>
-                     <div
-                        className="absolute inset-0"
-                        style={{
-                          backgroundImage:
-                            'radial-gradient(circle at center, rgba(255,255,255,0.1) 1px, transparent 1px)',
-                          backgroundSize: '1rem 1rem',
-                        }}
-                      />
+          <div className="relative h-[60vh] md:h-[70vh]">
+            <div className="absolute inset-0 bg-primary z-0">
+              <div className="absolute -right-1/4 top-0 h-full w-1/2 bg-secondary transform -skew-x-12"></div>
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    backgroundImage:
+                      'radial-gradient(circle at center, rgba(255,255,255,0.1) 1px, transparent 1px)',
+                    backgroundSize: '1rem 1rem',
+                  }}
+                />
+            </div>
+            <div className="container mx-auto h-full flex items-center relative z-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                  <div className="text-white">
+                      <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6 font-headline">Salient Features</h2>
+                      <ul className="space-y-3">
+                          {salientFeatures.map((feature, index) => (
+                              <li key={index} className="flex items-center text-lg md:text-xl font-body">
+                                  <div className="w-2 h-2 rounded-full bg-white mr-4"></div>
+                                  {feature}
+                              </li>
+                          ))}
+                      </ul>
                   </div>
-                  <div className="container mx-auto h-full flex items-center relative z-10">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                        <div className="text-white">
-                            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6 font-headline">Salient Features</h2>
-                            <ul className="space-y-3">
-                                {salientFeatures.map((feature, index) => (
-                                    <li key={index} className="flex items-center text-lg md:text-xl font-body">
-                                        <div className="w-2 h-2 rounded-full bg-white mr-4"></div>
-                                        {feature}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                         <div className="relative flex justify-center items-center h-full">
-                            <div className="absolute w-64 h-64 md:w-80 md:h-80 bg-white/20 rounded-full blur-2xl"></div>
-                            <Image src="/logo.png" alt="Royal School of Learning Logo" width={300} height={300} className="relative z-10 animate-fade-in-zoom" />
-                        </div>
-                    </div>
+                    <div className="relative flex justify-center items-center h-full">
+                      <div className="absolute w-64 h-64 md:w-80 md:h-80 bg-white/20 rounded-full blur-2xl"></div>
+                      <Image src="/logo.png" alt="Royal School of Learning Logo" width={300} height={300} className="relative z-10 animate-fade-in-zoom" />
                   </div>
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                 <div className="relative h-[60vh] md:h-[70vh]">
-                    <div className="absolute inset-0 bg-primary z-0">
-                    <div className="absolute -right-1/4 top-0 h-full w-1/2 bg-secondary transform -skew-x-12"></div>
-                     <div
-                        className="absolute inset-0"
-                        style={{
-                          backgroundImage:
-                            'radial-gradient(circle at center, rgba(255,255,255,0.1) 1px, transparent 1px)',
-                          backgroundSize: '1rem 1rem',
-                        }}
-                      />
-                  </div>
-                   <div className="container mx-auto h-full flex items-center justify-center relative z-10">
-                        <Image src="/unnamed.webp" alt="E-Learning" width={600} height={400} className="object-contain" data-ai-hint="e-learning illustration"/>
-                    </div>
-                 </div>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 text-white hover:bg-white/30 border-none" />
-            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 text-white hover:bg-white/30 border-none" />
-             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20">
-                {/* Dots can be implemented here if needed */}
-             </div>
-          </Carousel>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* About Section */}
