@@ -86,7 +86,7 @@ export default function Home() {
                         </div>
                          <div className="relative flex justify-center items-center h-full">
                             <div className="absolute w-64 h-64 md:w-80 md:h-80 bg-white/20 rounded-full blur-2xl"></div>
-                            <Image src="/logo.png" alt="Royal School of Learning Logo" width={300} height={300} className="relative z-10" />
+                            <Image src="/logo.png" alt="Royal School of Learning Logo" width={300} height={300} className="relative z-10 animate-fade-in-zoom" />
                         </div>
                     </div>
                   </div>
