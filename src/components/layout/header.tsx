@@ -24,7 +24,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       {/* Top Bar */}
       <div className="bg-primary text-primary-foreground py-2">
         <div className="container flex justify-between items-center text-sm">
@@ -60,15 +60,15 @@ export default function Header() {
       </div>
 
       {/* Main Navigation */}
-      <div className="container flex h-20 items-center">
+      <div className="container flex h-24 items-center">
         <div className="mr-4 flex">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
+          <Link href="/" className="mr-4 flex items-center space-x-2">
             <Image
               src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
               alt="Royal School of Learning Logo"
-              width={64}
-              height={64}
-              className="h-16 w-16"
+              width={80}
+              height={80}
+              className="h-20 w-20"
             />
           </Link>
         </div>
