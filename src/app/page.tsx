@@ -43,10 +43,11 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-background">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative bg-secondary overflow-hidden">
+        <section className="relative bg-background overflow-hidden">
           <div className="relative h-[60vh] md:h-[70vh]">
             <div className="absolute inset-0 bg-background z-0">
               <div className="absolute inset-y-0 left-0 w-1/2 bg-secondary animate-slide-in-left" style={{ clipPath: 'ellipse(100% 75% at 0% 50%)' }}></div>
+              <div className="absolute inset-y-0 left-0 w-1/4 bg-primary animate-slide-in-left" style={{ clipPath: 'ellipse(100% 75% at 0% 50%)', animationDelay: '0.2s' }}></div>
               <div className="absolute inset-y-0 right-0 w-1/2 bg-background animate-slide-in-right" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)' }}></div>
                 <div
                   className="absolute inset-0"
