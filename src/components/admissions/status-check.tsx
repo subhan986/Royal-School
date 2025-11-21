@@ -34,7 +34,7 @@ const statusInfo = {
   },
   accepted: {
     title: 'Congratulations! Application Accepted',
-    description: 'Welcome to Gattwala Academy! Please check your email for further instructions on the enrollment process.',
+    description: 'Welcome to Royal School of Learning! Please check your email for further instructions on the enrollment process.',
     icon: CheckCircle2,
     variant: 'default',
     className: 'border-green-500 bg-green-50 text-green-800 [&>svg]:text-green-600'

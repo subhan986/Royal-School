@@ -6,7 +6,7 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 
 export const metadata: Metadata = {
-  title: 'Gattwala Academy',
+  title: 'Royal School of Learning',
   description: 'Excellence in Education',
   icons: {
     icon: '/favicon.ico',

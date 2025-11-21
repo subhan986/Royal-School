@@ -11,7 +11,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <GraduationCap className="h-8 w-8 text-primary" />
               <span className="font-bold font-headline text-xl">
-                Gattwala Academy
+                Royal School of Learning
               </span>
             </Link>
             <p className="text-muted-foreground font-body">Nurturing young minds for a brighter future.</p>
@@ -43,7 +43,7 @@ export default function Footer() {
               </li>
                <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 shrink-0 text-primary" />
-                <a href="mailto:info@gattwalaacademy.edu" className="hover:text-primary">info@gattwalaacademy.edu</a>
+                <a href="mailto:info@royalschooloflearning.edu" className="hover:text-primary">info@royalschooloflearning.edu</a>
               </li>
             </ul>
           </div>
@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
         
         <div className="mt-12 border-t pt-8 text-center text-muted-foreground font-body">
-          <p>&copy; {new Date().getFullYear()} Gattwala Academy. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Royal School of Learning. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

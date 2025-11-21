@@ -7,7 +7,7 @@ export default function NewsPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-headline font-bold">News & Events</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-          Stay up-to-date with the latest happenings at Gattwala Academy.
+          Stay up-to-date with the latest happenings at Royal School of Learning.
         </p>
       </div>
 

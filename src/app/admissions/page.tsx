@@ -9,7 +9,7 @@ export default function AdmissionsPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-headline font-bold">Admissions Portal</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-          Begin your journey with Gattwala Academy. We are excited to welcome new students to our community.
+          Begin your journey with Royal School of Learning. We are excited to welcome new students to our community.
         </p>
       </div>
 

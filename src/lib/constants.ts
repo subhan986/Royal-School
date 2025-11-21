@@ -11,7 +11,7 @@ export const MOCK_NEWS = [
     title: 'Annual Sports Day 2024 a Resounding Success',
     date: '2024-03-15',
     imageId: 'news-1',
-    content: `Gattwala Academy held its annual sports day on March 15, 2024, with great enthusiasm. Students from all houses participated in various track and field events. The chief guest, renowned athlete Mr. Ahmed Khan, praised the students' sportsmanship. The Blue House emerged as the overall champion, with team captain Sara Ali receiving the trophy from Principal Fatima Ahmed.`,
+    content: `Royal School of Learning held its annual sports day on March 15, 2024, with great enthusiasm. Students from all houses participated in various track and field events. The chief guest, renowned athlete Mr. Ahmed Khan, praised the students' sportsmanship. The Blue House emerged as the overall champion, with team captain Sara Ali receiving the trophy from Principal Fatima Ahmed.`,
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const MOCK_NEWS = [
     title: 'Green Initiative: Tree Plantation Drive',
     date: '2024-05-05',
     imageId: 'news-3',
-    content: `In a move towards a greener campus, Gattwala Academy organized a tree plantation drive on May 5, 2024. Students and teachers, including environmental club coordinator Mr. David Green, planted over 100 saplings across the school grounds. The event aimed to raise awareness about environmental conservation among the youth.`,
+    content: `In a move towards a greener campus, Royal School of Learning organized a tree plantation drive on May 5, 2024. Students and teachers, including environmental club coordinator Mr. David Green, planted over 100 saplings across the school grounds. The event aimed to raise awareness about environmental conservation among the youth.`,
   },
   {
     id: 4,

@@ -21,7 +21,7 @@ export default function Header() {
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <GraduationCap className="h-8 w-8 text-primary" />
             <span className="font-bold font-headline text-xl">
-              Gattwala Academy
+              Royal School of Learning
             </span>
           </Link>
         </div>
@@ -62,7 +62,7 @@ export default function Header() {
                 <div className="flex items-center justify-between border-b pb-4">
                    <Link href="/" className="flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
                       <GraduationCap className="h-6 w-6 text-primary" />
-                      <span className="font-bold font-headline">Gattwala Academy</span>
+                      <span className="font-bold font-headline">Royal School of Learning</span>
                     </Link>
                 </div>
                 <nav className="flex-grow mt-6">

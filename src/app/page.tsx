@@ -38,7 +38,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 p-4 max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-bold tracking-tight text-shadow-lg">
-              Welcome to Gattwala Academy
+              Welcome to Royal School of Learning
             </h1>
             <p className="mt-4 text-lg md:text-xl font-body max-w-2xl mx-auto">
               Nurturing young minds for a brighter future through excellence in education and character development.

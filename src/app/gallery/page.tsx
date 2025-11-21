@@ -10,7 +10,7 @@ export default function GalleryPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-headline font-bold">Image Gallery</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-          A glimpse into the vibrant life at Gattwala Academy.
+          A glimpse into the vibrant life at Royal School of Learning.
         </p>
       </div>
 
