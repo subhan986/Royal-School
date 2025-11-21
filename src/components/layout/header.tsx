@@ -9,6 +9,7 @@ import { NAV_LINKS } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import Image from 'next/image';
 
 export default function Header() {
   const pathname = usePathname();
@@ -16,11 +17,11 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+      <div className="container flex h-20 items-center">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <GraduationCap className="h-8 w-8 text-primary" />
-            <span className="font-bold font-headline text-xl">
+            <Image src="/logo.png" alt="Royal School of Learning Logo" width={50} height={50} className="h-14 w-14" />
+            <span className="font-bold font-headline text-xl hidden sm:inline-block">
               Royal School of Learning
             </span>
           </Link>
@@ -61,7 +62,7 @@ export default function Header() {
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between border-b pb-4">
                    <Link href="/" className="flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
-                      <GraduationCap className="h-6 w-6 text-primary" />
+                      <Image src="/logo.png" alt="Royal School of Learning Logo" width={40} height={40} />
                       <span className="font-bold font-headline">Royal School of Learning</span>
                     </Link>
                 </div>

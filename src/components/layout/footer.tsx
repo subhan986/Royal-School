@@ -1,6 +1,7 @@
 import { GraduationCap, MapPin, Phone, Mail, Twitter, Facebook, Instagram } from 'lucide-react';
 import Link from 'next/link';
 import { NAV_LINKS } from '@/lib/constants';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <GraduationCap className="h-8 w-8 text-primary" />
+              <Image src="/logo.png" alt="Royal School of Learning Logo" width={40} height={40} />
               <span className="font-bold font-headline text-xl">
                 Royal School of Learning
               </span>
