@@ -66,9 +66,9 @@ export default function Header() {
             <Image
               src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
               alt="Royal School of Learning Logo"
-              width={120}
-              height={120}
-              className="h-28 w-28"
+              width={100}
+              height={100}
+              className="h-24 w-24"
             />
           </Link>
         </div>
