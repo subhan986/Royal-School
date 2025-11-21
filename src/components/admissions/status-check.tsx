@@ -75,6 +75,21 @@ export default function StatusCheck() {
     }
   }
 
+  const renderStatusAlert = () => {
+    if (!status || !statusInfo[status]) return null;
+
+    const Icon = statusInfo[status].icon;
+    const { variant, className, title, description } = statusInfo[status];
+
+    return (
+      <Alert variant={variant as any} className={className}>
+        <Icon className="h-4 w-4" />
+        <AlertTitle>{title}</AlertTitle>
+        <AlertDescription>{description}</AlertDescription>
+      </Alert>
+    );
+  };
+
   return (
     <Card>
       <CardHeader>
@@ -101,15 +116,7 @@ export default function StatusCheck() {
             <Button type="submit">Check Status</Button>
           </form>
         </Form>
-        {status && statusInfo[status] && (
-           <Alert variant={statusInfo[status].variant as any} className={statusInfo[status].className}>
-            <statusInfo[status].icon className="h-4 w-4" />
-            <AlertTitle>{statusInfo[status].title}</AlertTitle>
-            <AlertDescription>
-                {statusInfo[status].description}
-            </AlertDescription>
-        </Alert>
-        )}
+        {renderStatusAlert()}
       </CardContent>
     </Card>
   );
