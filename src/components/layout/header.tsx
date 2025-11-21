@@ -2,7 +2,15 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { GraduationCap, Menu, X } from 'lucide-react';
+import {
+  Menu,
+  Phone,
+  Mail,
+  Book,
+  Facebook,
+  Youtube,
+  Instagram,
+} from 'lucide-react';
 import { useState } from 'react';
 
 import { NAV_LINKS } from '@/lib/constants';
@@ -17,27 +25,65 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      {/* Top Bar */}
+      <div className="bg-primary text-primary-foreground py-2">
+        <div className="container flex justify-between items-center text-sm">
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-2">
+              <Phone size={16} />
+              <a href="tel:+92418554850" className="hover:underline">
+                +92 (41) 855 4850
+              </a>
+            </div>
+            <div className="hidden md:flex items-center gap-2">
+              <Mail size={16} />
+              <a
+                href="mailto:info@royalschooloflearning.edu"
+                className="hover:underline"
+              >
+                info@royalschooloflearning.edu
+              </a>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+             <a href="#" className="hidden md:flex items-center gap-2 hover:underline">
+                <Book size={16}/>
+                <span>Oakridge Publications</span>
+             </a>
+            <div className="flex items-center gap-3">
+               <a href="#" aria-label="Facebook" className="hover:opacity-80 transition-opacity"><Facebook size={18}/></a>
+               <a href="#" aria-label="YouTube" className="hover:opacity-80 transition-opacity"><Youtube size={18}/></a>
+               <a href="#" aria-label="Instagram" className="hover:opacity-80 transition-opacity"><Instagram size={18}/></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Navigation */}
       <div className="container flex h-20 items-center">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Image src="/logo.png" alt="Royal School of Learning Logo" width={50} height={50} className="h-14 w-14" />
-            <span className="font-bold font-headline text-xl hidden sm:inline-block">
-              Royal School of Learning
-            </span>
+            <Image
+              src="/logo.png"
+              alt="Royal School of Learning Logo"
+              width={50}
+              height={50}
+              className="h-14 w-14"
+            />
           </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex flex-1 items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex flex-1 items-center justify-end space-x-6 text-sm font-medium">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                'transition-colors hover:text-primary',
+                'transition-colors hover:text-primary pb-1 border-b-2',
                 pathname === link.href
-                  ? 'text-primary font-semibold'
-                  : 'text-foreground/60'
+                  ? 'text-primary border-primary'
+                  : 'text-foreground/60 border-transparent'
               )}
             >
               {link.label}
@@ -45,15 +91,11 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="flex flex-1 items-center justify-end space-x-4">
-          <Button asChild className="hidden md:inline-flex">
-            <Link href="/admissions">Admissions</Link>
-          </Button>
-
-          {/* Mobile Navigation */}
+        {/* Mobile Navigation */}
+        <div className="flex flex-1 items-center justify-end space-x-4 md:hidden">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" className="md:hidden">
+              <Button variant="ghost">
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Open Menu</span>
               </Button>
@@ -61,10 +103,21 @@ export default function Header() {
             <SheetContent side="left">
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between border-b pb-4">
-                   <Link href="/" className="flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
-                      <Image src="/logo.png" alt="Royal School of Learning Logo" width={40} height={40} />
-                      <span className="font-bold font-headline">Royal School of Learning</span>
-                    </Link>
+                  <Link
+                    href="/"
+                    className="flex items-center space-x-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    <Image
+                      src="/logo.png"
+                      alt="Royal School of Learning Logo"
+                      width={40}
+                      height={40}
+                    />
+                    <span className="font-bold font-headline">
+                      Royal School of Learning
+                    </span>
+                  </Link>
                 </div>
                 <nav className="flex-grow mt-6">
                   <ul className="space-y-4">
@@ -86,7 +139,11 @@ export default function Header() {
                     ))}
                   </ul>
                 </nav>
-                <Button asChild className="w-full mt-6" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button
+                  asChild
+                  className="w-full mt-6"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   <Link href="/admissions">Admissions</Link>
                 </Button>
               </div>

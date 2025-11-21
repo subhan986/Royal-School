@@ -1,11 +1,11 @@
-import { GraduationCap, MapPin, Phone, Mail, Twitter, Facebook, Instagram } from 'lucide-react';
+import { GraduationCap, MapPin, Phone, Mail, Twitter, Facebook, Instagram, Youtube } from 'lucide-react';
 import Link from 'next/link';
 import { NAV_LINKS } from '@/lib/constants';
 import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-background border-t">
+    <footer className="bg-slate-100 dark:bg-slate-900 border-t">
       <div className="container py-12 px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
@@ -40,7 +40,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 shrink-0 text-primary" />
-                <a href="tel:+921234567890" className="hover:text-primary">+92 123 4567890</a>
+                <a href="tel:+92418554850" className="hover:text-primary">+92 (41) 855 4850</a>
               </li>
                <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 shrink-0 text-primary" />
@@ -52,8 +52,8 @@ export default function Footer() {
           <div>
             <h3 className="font-headline font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Twitter /></a>
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Facebook /></a>
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Youtube /></a>
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Instagram /></a>
             </div>
           </div>
