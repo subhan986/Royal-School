@@ -60,10 +60,6 @@ export default function Home() {
             </div>
             <div className="container mx-auto h-full flex items-center relative z-10">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div className="relative flex justify-center items-center h-full">
-                  <div className="absolute w-64 h-64 md:w-80 md:h-80 bg-white/20 rounded-full blur-2xl"></div>
-                  <Image src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png" alt="Royal School of Learning Logo" width={300} height={300} className="relative z-10 animate-fade-in-zoom" />
-                </div>
                 <div className="text-foreground">
                     <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6 font-headline">Salient Features</h2>
                     <ul className="space-y-3">
@@ -74,6 +70,10 @@ export default function Home() {
                             </li>
                         ))}
                     </ul>
+                </div>
+                <div className="relative flex justify-center items-center h-full">
+                  <div className="absolute w-64 h-64 md:w-80 md:h-80 bg-white/20 rounded-full blur-2xl"></div>
+                  <Image src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png" alt="Royal School of Learning Logo" width={300} height={300} className="relative z-10 animate-fade-in-zoom" />
                 </div>
               </div>
             </div>
