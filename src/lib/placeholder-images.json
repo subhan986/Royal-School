@@ -1,3 +1,106 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-campus",
+      "description": "A beautiful shot of the Gattwala Academy campus",
+      "imageUrl": "https://images.unsplash.com/photo-1700671562333-f71286a7c748?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzY2hvb2wlMjBjYW1wdXN8ZW58MHx8fHwxNzYzNjI1MDg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school campus"
+    },
+    {
+      "id": "gallery-thumb-1",
+      "description": "Students in a modern classroom",
+      "imageUrl": "https://images.unsplash.com/photo-1758270705067-0d7edee57af0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2xhc3Nyb29tJTIwc3R1ZGVudHN8ZW58MHx8fHwxNzYzNjQ5NzI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "classroom students"
+    },
+    {
+      "id": "gallery-thumb-2",
+      "description": "School library with students reading",
+      "imageUrl": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzY2hvb2wlMjBsaWJyYXJ5fGVufDB8fHx8MTc2MzcwMTI4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school library"
+    },
+    {
+      "id": "gallery-thumb-3",
+      "description": "Students playing sports on the field",
+      "imageUrl": "https://images.unsplash.com/photo-1725622428670-40a7e9add82f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMHNwb3J0c3xlbnwwfHx8fDE3NjM2NjA4NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "students sports"
+    },
+    {
+      "id": "gallery-thumb-4",
+      "description": "Science lab with modern equipment",
+      "imageUrl": "https://images.unsplash.com/photo-1595311182166-d63273ddc386?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzY2llbmNlJTIwbGFifGVufDB8fHx8MTc2MzcyMzEzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "science lab"
+    },
+    {
+      "id": "gallery-full-1",
+      "description": "Full view of the school auditorium",
+      "imageUrl": "https://images.unsplash.com/photo-1643199121319-b3b5695e4acb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2Nob29sJTIwYXVkaXRvcml1bXxlbnwwfHx8fDE3NjM3MzU2MTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school auditorium"
+    },
+    {
+      "id": "gallery-full-2",
+      "description": "A serene shot of the school garden",
+      "imageUrl": "https://images.unsplash.com/photo-1527891751199-7225231a68dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzY2hvb2wlMjBnYXJkZW58ZW58MHx8fHwxNzYzNzM1NjE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school garden"
+    },
+    {
+      "id": "gallery-full-3",
+      "description": "Art class in session",
+      "imageUrl": "https://images.unsplash.com/photo-1578961140619-896df05b1fd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnQlMjBjbGFzc3xlbnwwfHx8fDE3NjM3MTI4NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "art class"
+    },
+    {
+      "id": "gallery-full-4",
+      "description": "Students collaborating on a project",
+      "imageUrl": "https://images.unsplash.com/photo-1557734864-c78b6dfef1b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdHVkZW50cyUyMGNvbGxhYm9yYXRpbmd8ZW58MHx8fHwxNzYzNjMzMjM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "students collaborating"
+    },
+    {
+      "id": "gallery-full-5",
+      "description": "The school building exterior",
+      "imageUrl": "https://images.unsplash.com/photo-1574958269340-fa927503f3dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzY2hvb2wlMjBidWlsZGluZ3xlbnwwfHx8fDE3NjM3MjcxMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school building"
+    },
+    {
+      "id": "gallery-full-6",
+      "description": "Computer lab with students learning",
+      "imageUrl": "https://images.unsplash.com/photo-1629904853716-f0bc54eea481?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb21wdXRlciUyMGxhYnxlbnwwfHx8fDE3NjM2NTkyNjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "computer lab"
+    },
+    {
+      "id": "gallery-full-7",
+      "description": "Music room with various instruments",
+      "imageUrl": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdXNpYyUyMHJvb218ZW58MHx8fHwxNzYzNzMwNDYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "music room"
+    },
+    {
+      "id": "gallery-full-8",
+      "description": "A school event with parents and teachers",
+      "imageUrl": "https://images.unsplash.com/photo-1503428593586-e225b39bddfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzY2hvb2wlMjBldmVudHxlbnwwfHx8fDE3NjM3MjI4MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school event"
+    },
+    {
+      "id": "news-1",
+      "description": "Students celebrating at the annual sports day",
+      "imageUrl": "https://images.unsplash.com/photo-1621998014874-a6edfb5f9bc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjBkYXl8ZW58MHx8fHwxNzYzNjMzNzQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sports day"
+    },
+    {
+      "id": "news-2",
+      "description": "Winner of the science fair with their project",
+      "imageUrl": "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY2llbmNlJTIwZmFpcnxlbnwwfHx8fDE3NjM2NjQxODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "science fair"
+    },
+    {
+      "id": "news-3",
+      "description": "Students planting trees on campus",
+      "imageUrl": "https://images.unsplash.com/photo-1625758476104-f2ed6c81248f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0cmVlJTIwcGxhbnRhdGlvbnxlbnwwfHx8fDE3NjM2MzI5ODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tree plantation"
+    },
+    {
+      "id": "news-4",
+      "description": "School principal giving a speech",
+      "imageUrl": "https://images.unsplash.com/photo-1660795670842-f183567078b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcmluY2lwYWwlMjBzcGVlY2h8ZW58MHx8fHwxNzYzNzM1NjE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "principal speech"
+    }
+  ]
 }
