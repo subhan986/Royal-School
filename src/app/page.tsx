@@ -25,16 +25,13 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center text-center text-white">
-          {heroImage && (
-            <Image
-              src={heroImage.imageUrl}
-              alt={heroImage.description}
+          <Image
+              src="/unnamed.webp"
+              alt="Royal School of Learning campus"
               fill
               className="object-cover"
-              data-ai-hint={heroImage.imageHint}
               priority
             />
-          )}
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 p-4 max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-bold tracking-tight text-shadow-lg">
