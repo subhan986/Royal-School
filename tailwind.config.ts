@@ -93,12 +93,12 @@ export default {
           '100%': { opacity: '1', transform: 'scale(1)' },
         },
         'slide-in-left': {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(0)' },
+          '0%': { transform: 'translateX(-100%)', clipPath: 'ellipse(100% 75% at -100% 50%)' },
+          '100%': { transform: 'translateX(0)', clipPath: 'ellipse(100% 75% at 0% 50%)' },
         },
         'slide-in-right': {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0)' },
+          '0%': { transform: 'translateX(100%)', clipPath: 'ellipse(100% 75% at 200% 50%)' },
+          '100%': { transform: 'translateX(0)', clipPath: 'ellipse(100% 75% at 100% 50%)' },
         },
       },
       animation: {
