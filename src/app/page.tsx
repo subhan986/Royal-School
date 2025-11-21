@@ -71,7 +71,7 @@ export default function Home() {
                         ))}
                     </ul>
                 </div>
-                <div className="relative flex justify-center items-center h-full">
+                <div className="relative flex justify-end items-center h-full">
                   <div className="absolute w-64 h-64 md:w-80 md:h-80 bg-white/20 rounded-full blur-2xl"></div>
                   <Image src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png" alt="Royal School of Learning Logo" width={300} height={300} className="relative z-10 animate-fade-in-zoom" />
                 </div>
