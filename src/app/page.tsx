@@ -9,6 +9,7 @@ import {
   Newspaper,
   Phone,
   Camera,
+  Star,
 } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
@@ -21,10 +22,10 @@ const galleryImages = PlaceHolderImages.filter((img) => img.id.startsWith('galle
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-background">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center text-center text-white">
+        <section className="relative h-[70vh] md:h-[80vh] flex items-center justify-center text-center text-white">
           <Image
               src="/unnamed.webp"
               alt="Royal School of Learning campus"
@@ -32,21 +33,21 @@ export default function Home() {
               className="object-cover"
               priority
             />
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
           <div className="relative z-10 p-4 max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-bold tracking-tight text-shadow-lg">
-              Welcome to Royal School of Learning
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline font-extrabold tracking-tight">
+              Royal School of Learning
             </h1>
-            <p className="mt-4 text-lg md:text-xl font-body max-w-2xl mx-auto">
+            <p className="mt-6 text-lg md:text-xl font-body max-w-3xl mx-auto text-neutral-200">
               Nurturing young minds for a brighter future through excellence in education and character development.
             </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Button asChild size="lg" className="font-bold">
+            <div className="mt-10 flex flex-wrap justify-center gap-4">
+              <Button asChild size="lg" className="font-bold text-lg">
                 <Link href="/admissions">
                   Apply Now <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="secondary" className="font-bold">
+              <Button asChild size="lg" variant="secondary" className="font-bold text-lg">
                 <Link href="#about">Learn More</Link>
               </Button>
             </div>
@@ -54,53 +55,53 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-16 lg:py-24 bg-background">
+        <section id="about" className="py-20 lg:py-32 bg-secondary/50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-headline font-bold text-center mb-16">
               Our Core Values
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card className="text-center shadow-md hover:shadow-2xl transition-shadow duration-300 border-0 bg-card">
                 <CardHeader>
-                  <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit mb-4">
-                    <GraduationCap className="h-10 w-10 text-primary" />
+                  <div className="mx-auto bg-primary/10 rounded-full p-5 w-fit mb-4">
+                    <GraduationCap className="h-12 w-12 text-primary" />
                   </div>
-                  <CardTitle className="font-headline text-2xl">
+                  <CardTitle className="font-headline text-3xl">
                     Our Mission
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="font-body text-muted-foreground">
+                  <p className="font-body text-muted-foreground text-lg">
                     To provide a stimulating learning environment that inspires students to achieve their full potential and become lifelong learners.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card className="text-center shadow-md hover:shadow-2xl transition-shadow duration-300 border-0 bg-card">
                 <CardHeader>
-                  <div className="mx-auto bg-accent/10 rounded-full p-4 w-fit mb-4">
-                    <BookOpen className="h-10 w-10 text-accent" />
+                  <div className="mx-auto bg-primary/10 rounded-full p-5 w-fit mb-4">
+                    <Star className="h-12 w-12 text-primary" />
                   </div>
-                  <CardTitle className="font-headline text-2xl">
+                  <CardTitle className="font-headline text-3xl">
                     Our Vision
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="font-body text-muted-foreground">
+                  <p className="font-body text-muted-foreground text-lg">
                     To be a leading educational institution recognized for our commitment to academic excellence, innovation, and holistic development.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card className="text-center shadow-md hover:shadow-2xl transition-shadow duration-300 border-0 bg-card">
                 <CardHeader>
-                  <div className="mx-auto bg-primary/10 rounded-full p-4 w-fit mb-4">
-                    <Newspaper className="h-10 w-10 text-primary" />
+                  <div className="mx-auto bg-primary/10 rounded-full p-5 w-fit mb-4">
+                    <BookOpen className="h-12 w-12 text-primary" />
                   </div>
-                  <CardTitle className="font-headline text-2xl">
+                  <CardTitle className="font-headline text-3xl">
                     Our Values
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="font-body text-muted-foreground">
+                  <p className="font-body text-muted-foreground text-lg">
                     We foster respect, integrity, curiosity, and collaboration, creating a community of responsible and compassionate global citizens.
                   </p>
                 </CardContent>
@@ -110,35 +111,35 @@ export default function Home() {
         </section>
 
         {/* News & Events Section */}
-        <section className="py-16 lg:py-24">
+        <section className="py-20 lg:py-32">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-headline font-bold text-center mb-16">
               Latest News & Events
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {MOCK_NEWS.slice(0, 3).map((item) => {
                 const newsImage = PlaceHolderImages.find(img => img.id === item.imageId);
                 return (
-                  <Card key={item.id} className="overflow-hidden flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <Card key={item.id} className="overflow-hidden flex flex-col group shadow-lg hover:shadow-2xl transition-shadow duration-300 rounded-xl border-0">
                     {newsImage && (
-                       <div className="relative w-full h-48">
+                       <div className="relative w-full h-56 overflow-hidden">
                          <Image
                           src={newsImage.imageUrl}
                           alt={newsImage.description}
                           fill
-                          className="object-cover"
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
                           data-ai-hint={newsImage.imageHint}
                         />
                        </div>
                     )}
                     <CardHeader>
-                      <CardTitle className="font-headline text-xl">{item.title}</CardTitle>
+                      <CardTitle className="font-headline text-2xl group-hover:text-primary transition-colors">{item.title}</CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
-                      <p className="text-muted-foreground line-clamp-3 font-body">{item.content}</p>
+                      <p className="text-muted-foreground line-clamp-3 font-body text-md">{item.content}</p>
                     </CardContent>
                     <div className="p-6 pt-0">
-                      <Button asChild variant="link" className="p-0 h-auto">
+                      <Button asChild variant="link" className="p-0 h-auto font-bold">
                         <Link href="/news">Read More <ArrowRight className="ml-2 h-4 w-4" /></Link>
                       </Button>
                     </div>
@@ -146,7 +147,7 @@ export default function Home() {
                 );
               })}
             </div>
-             <div className="text-center mt-12">
+             <div className="text-center mt-16">
               <Button asChild size="lg" variant="outline" className="font-bold">
                   <Link href="/news">
                     <Newspaper className="mr-2 h-5 w-5" /> View All News
@@ -157,25 +158,27 @@ export default function Home() {
         </section>
 
         {/* Gallery Preview Section */}
-        <section className="py-16 lg:py-24 bg-background">
+        <section className="py-20 lg:py-32 bg-secondary/50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-headline font-bold text-center mb-16">
               Campus Life
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {galleryImages.map((image, index) => (
-                <div key={image.id} className="relative aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <div key={image.id} className="relative aspect-square overflow-hidden rounded-xl shadow-lg group">
                   <Image
                     src={image.imageUrl}
                     alt={image.description}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    sizes="(max-width: 768px) 50vw, 25vw"
                     data-ai-hint={image.imageHint}
                   />
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
               ))}
             </div>
-             <div className="text-center mt-12">
+             <div className="text-center mt-16">
               <Button asChild size="lg" className="font-bold">
                   <Link href="/gallery">
                     <Camera className="mr-2 h-5 w-5" /> View Gallery
@@ -186,15 +189,15 @@ export default function Home() {
         </section>
         
         {/* Contact Info */}
-        <section className="py-16 lg:py-24">
+        <section className="py-20 lg:py-32">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl font-headline font-bold mb-4">
               Get in Touch
             </h2>
-            <p className="font-body max-w-2xl mx-auto text-muted-foreground mb-8">
+            <p className="font-body max-w-2xl mx-auto text-muted-foreground mb-8 text-lg">
               We'd love to hear from you. Reach out with any questions or to schedule a visit.
             </p>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-8 text-lg">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-8 text-xl">
               <div className="flex items-center gap-3">
                 <MapPin className="h-6 w-6 text-primary" />
                 <span>FSD Officer Colony, Gattwala</span>
