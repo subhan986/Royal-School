@@ -15,16 +15,7 @@ import {
   Youtube,
   Instagram,
   Mail,
-  ChevronLeft,
-  ChevronRight,
 } from 'lucide-react';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -86,6 +77,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="absolute bottom-0 left-0 right-0 h-16 bg-background rounded-t-full"></div>
         </section>
 
         {/* About Section */}
