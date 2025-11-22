@@ -218,7 +218,7 @@ export default function Home() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                   <div>
-                    <div className="text-6xl font-bold font-headline"><Counter to={7000} duration={2} /></div>
+                    <div className="text-6xl font-bold font-headline"><Counter to={500} duration={2} /></div>
                     <p className="text-lg font-body mt-2">Students</p>
                   </div>
                   <div>
