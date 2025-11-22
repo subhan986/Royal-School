@@ -145,8 +145,8 @@ export default function Home() {
                     <Image
                       src="/school.png"
                       alt="A welcoming image of the school building"
-                      width={600}
-                      height={400}
+                      width={700}
+                      height={500}
                       className="rounded-lg shadow-2xl object-cover"
                     />
                   </div>
