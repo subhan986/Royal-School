@@ -188,22 +188,22 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="grid grid-cols-2 gap-6">
-                    <Card className="text-center p-6 shadow-md hover:shadow-xl transition-shadow">
+                    <Card className="text-center p-6 shadow-md hover:shadow-xl transition-shadow bg-card">
                       <Award className="h-10 w-10 mx-auto text-primary mb-3" />
                       <h3 className="font-headline text-xl font-semibold">Certified Staff</h3>
                       <a href="#" className="text-sm text-primary hover:underline font-body">Learn More</a>
                     </Card>
-                    <Card className="text-center p-6 shadow-md hover:shadow-xl transition-shadow">
+                    <Card className="text-center p-6 shadow-md hover:shadow-xl transition-shadow bg-card">
                       <GraduationCap className="h-10 w-10 mx-auto text-primary mb-3" />
                       <h3 className="font-headline text-xl font-semibold">Admission</h3>
                        <a href="/admissions" className="text-sm text-primary hover:underline font-body">Learn More</a>
                     </Card>
-                    <Card className="text-center p-6 shadow-md hover:shadow-xl transition-shadow">
+                    <Card className="text-center p-6 shadow-md hover:shadow-xl transition-shadow bg-card">
                       <Users className="h-10 w-10 mx-auto text-primary mb-3" />
                       <h3 className="font-headline text-xl font-semibold">Student Council</h3>
                        <a href="#" className="text-sm text-primary hover:underline font-body">Learn More</a>
                     </Card>
-                    <Card className="text-center p-6 shadow-md hover:shadow-xl transition-shadow">
+                    <Card className="text-center p-6 shadow-md hover:shadow-xl transition-shadow bg-card">
                       <Building className="h-10 w-10 mx-auto text-primary mb-3" />
                       <h3 className="font-headline text-xl font-semibold">Infrastructure</h3>
                        <a href="#" className="text-sm text-primary hover:underline font-body">Learn More</a>
