@@ -38,7 +38,7 @@ const Preloader = () => {
     >
       <div className="animate-pulse">
         <Image
-          src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
+          src="/logo.png"
           alt="Royal School of Learning Logo"
           width={150}
           height={150}
