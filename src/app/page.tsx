@@ -142,16 +142,13 @@ export default function Home() {
                     </Button>
                   </div>
                   <div className="relative">
-                    {careerImage && (
-                      <Image
-                        src={careerImage.imageUrl}
-                        alt={careerImage.description}
-                        width={600}
-                        height={400}
-                        className="rounded-lg shadow-2xl object-cover"
-                        data-ai-hint={careerImage.imageHint}
-                      />
-                    )}
+                    <Image
+                      src="/school.png"
+                      alt="A welcoming image of the school building"
+                      width={600}
+                      height={400}
+                      className="rounded-lg shadow-2xl object-cover"
+                    />
                   </div>
                 </div>
               </div>
