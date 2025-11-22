@@ -68,7 +68,6 @@ const Counter = ({ to, duration }: { to: number; duration: number }) => {
 
 export default function Home() {
   const careerImage = PlaceHolderImages.find((img) => img.id === 'career-image');
-  const whyChooseUsBg = PlaceHolderImages.find((img) => img.id === 'why-choose-us-bg');
   
   return (
     <div className="flex flex-col min-h-screen bg-background">
@@ -170,15 +169,12 @@ export default function Home() {
             
             {/* Why Choose Us Section */}
             <section className="py-20 lg:py-24 bg-slate-50 dark:bg-slate-900/50 relative overflow-hidden">
-              {whyChooseUsBg && (
-                <Image
-                  src={whyChooseUsBg.imageUrl}
-                  alt="background"
-                  fill
-                  className="object-cover opacity-5 dark:opacity-10"
-                  data-ai-hint={whyChooseUsBg.imageHint}
-                />
-              )}
+              <Image
+                src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
+                alt="background"
+                fill
+                className="object-contain object-center opacity-5 dark:opacity-10 scale-150"
+              />
               <div className="container mx-auto px-4 relative">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                   <div>
