@@ -65,7 +65,7 @@ export default function Header() {
         <div className="flex items-center">
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/logo.png"
+              src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
               alt="Royal School of Learning Logo"
               width={60}
               height={60}
@@ -113,7 +113,7 @@ export default function Header() {
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     <Image
-                      src="/logo.png"
+                      src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
                       alt="Royal School of Learning Logo"
                       width={40}
                       height={40}
