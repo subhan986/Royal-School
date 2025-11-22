@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -27,7 +28,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background">
       {/* Top Bar */}
       <div className="bg-primary text-primary-foreground py-2">
-        <div className="container flex justify-between items-center text-sm">
+        <div className="container flex justify-between items-center text-sm px-4">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone size={16} />
@@ -60,15 +61,15 @@ export default function Header() {
       </div>
 
       {/* Main Navigation */}
-      <div className="container flex h-24 items-center">
+      <div className="container flex h-20 md:h-24 items-center px-4">
         <div className="flex items-center">
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
+              src="/logo.png"
               alt="Royal School of Learning Logo"
-              width={80}
-              height={80}
-              className="h-20 w-20"
+              width={60}
+              height={60}
+              className="h-14 w-14 md:h-20 md:w-20"
             />
           </Link>
         </div>
@@ -92,10 +93,13 @@ export default function Header() {
         </nav>
 
         {/* Mobile Navigation */}
-        <div className="flex flex-1 items-center justify-end space-x-4 md:hidden">
+        <div className="flex flex-1 items-center justify-end space-x-2 md:hidden">
+          <Button asChild size="sm">
+            <Link href="/admissions">Apply</Link>
+          </Button>
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost">
+              <Button variant="ghost" size="icon">
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Open Menu</span>
               </Button>
@@ -109,7 +113,7 @@ export default function Header() {
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     <Image
-                      src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
+                      src="/logo.png"
                       alt="Royal School of Learning Logo"
                       width={40}
                       height={40}
