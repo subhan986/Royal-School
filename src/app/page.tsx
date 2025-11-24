@@ -118,8 +118,8 @@ export default function Home() {
                         </ul>
                     </div>
                     <div className="relative flex justify-center md:justify-end items-center h-full">
-                      <div className="absolute w-64 h-64 md:w-80 md:h-80 bg-white/20 rounded-full blur-2xl"></div>
-                      <Image src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png" alt="Royal School of Learning Logo" width={300} height={300} className="relative z-10 animate-fade-in-zoom" />
+                      <div className="absolute w-80 h-80 md:w-96 md:h-96 bg-white/20 rounded-full blur-2xl"></div>
+                      <Image src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png" alt="Royal School of Learning Logo" width={400} height={400} className="relative z-10 animate-fade-in-zoom" />
                     </div>
                   </div>
                 </div>
