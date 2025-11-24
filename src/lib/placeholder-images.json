@@ -51,7 +51,7 @@
     {
       "id": "gallery-full-2",
       "description": "A serene shot of the school garden",
-      "imageUrl": "https://images.unsplash.com/photo-1705859896122-7e93a3adabe0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzY2hvb2wlMjBnYXJkZW58ZW58MHx8fHwxNzYzNzM1NjE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1705859896122-7e93a3adabe0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzY2hvb2wlMjBnYXJkZW58ZW58MHx8fHwxNzYzNzA1MTAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "school garden"
     },
     {
@@ -113,6 +113,30 @@
       "description": "School principal giving a speech",
       "imageUrl": "https://images.unsplash.com/photo-1660795670842-f183567078b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcmluY2lwYWwlMjBzcGVlY2h8ZW58MHx8fHwxNzYzNzM1NjE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "principal speech"
+    },
+    {
+      "id": "staff-1",
+      "description": "Portrait of Fatima Ahmed, Principal",
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmZW1hbGUlMjBwcmluY2lwYWx8ZW58MHx8fHwxNzYzODExNjUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "female principal"
+    },
+    {
+      "id": "staff-2",
+      "description": "Portrait of David Green, Vice Principal",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWxlJTIwdGVhY2hlcnxlbnwwfHx8fDE3NjM4MTE2ODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male teacher"
+    },
+    {
+      "id": "staff-3",
+      "description": "Portrait of Aisha Khan, Head of Arts",
+      "imageUrl": "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmZW1hbGUlMjB0ZWFjaGVyfGVufDB8fHx8MTc2MzgxMTY4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "female teacher"
+    },
+    {
+      "id": "staff-4",
+      "description": "Portrait of Bilal Shah, Sports Director",
+      "imageUrl": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb3BydHMlMjBjb2FjaHxlbnwwfHx8fDE3NjM4MTE3MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sports coach"
     }
   ]
 }

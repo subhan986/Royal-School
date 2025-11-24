@@ -1,8 +1,10 @@
+
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/admissions', label: 'Admissions' },
   { href: '/news', label: 'News & Events' },
   { href: '/gallery', label: 'Gallery' },
+  { href: '/staff', label: 'Staff' },
 ];
 
 export const MOCK_NEWS = [
@@ -34,4 +36,35 @@ export const MOCK_NEWS = [
     imageId: 'news-4',
     content: `The annual Parent-Teacher Meeting was held on May 20, 2024. Principal Fatima Ahmed addressed the gathering, emphasizing the importance of parent-teacher collaboration for student success. She also outlined the school's new digital learning initiatives for the upcoming academic year starting in August 2024.`,
   },
+];
+
+export const MOCK_STAFF = [
+    {
+      id: 1,
+      name: 'Fatima Ahmed',
+      role: 'Principal',
+      imageId: 'staff-1',
+      bio: 'With over 20 years of experience in education, Mrs. Ahmed leads the school with a vision of excellence and a passion for student development.',
+    },
+    {
+      id: 2,
+      name: 'David Green',
+      role: 'Vice Principal & Science Head',
+      imageId: 'staff-2',
+      bio: 'Mr. Green is a dedicated science educator who inspires students with his innovative teaching methods and passion for the natural world.',
+    },
+    {
+      id: 3,
+      name: 'Aisha Khan',
+      role: 'Head of Arts & Humanities',
+      imageId: 'staff-3',
+      bio: 'Ms. Khan fosters creativity and critical thinking, encouraging students to explore literature, history, and the arts with an open mind.',
+    },
+     {
+      id: 4,
+      name: 'Bilal Shah',
+      role: 'Sports Director',
+      imageId: 'staff-4',
+      bio: 'A former national-level athlete, Mr. Shah is committed to promoting physical fitness, teamwork, and sportsmanship among all students.',
+    }
 ];
