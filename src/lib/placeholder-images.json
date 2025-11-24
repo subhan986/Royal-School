@@ -116,27 +116,39 @@
     },
     {
       "id": "staff-1",
-      "description": "Portrait of Fatima Ahmed, Principal",
-      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmZW1hbGUlMjBwcmluY2lwYWx8ZW58MHx8fHwxNzYzODExNjUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "female principal"
-    },
-    {
-      "id": "staff-2",
-      "description": "Portrait of David Green, Vice Principal",
+      "description": "Portrait of a male teacher",
       "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWxlJTIwdGVhY2hlcnxlbnwwfHx8fDE3NjM4MTE2ODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "male teacher"
     },
     {
+      "id": "staff-2",
+      "description": "Portrait of a male teacher in a classroom",
+      "imageUrl": "https://images.unsplash.com/photo-1577896851231-70ef18881754?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYWxlJTIwdGVhY2hlcnxlbnwwfHx8fDE3NjM4MTE2ODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male teacher"
+    },
+    {
       "id": "staff-3",
-      "description": "Portrait of Aisha Khan, Head of Arts",
-      "imageUrl": "https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmZW1hbGUlMjB0ZWFjaGVyfGVufDB8fHx8MTc2MzgxMTY4NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "female teacher"
+      "description": "Portrait of a smiling male teacher",
+      "imageUrl": "https://images.unsplash.com/photo-1544717297-fa95b6ee8643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYWxlJTIwdGVhY2hlcnxlbnwwfHx8fDE3NjM4MTE2ODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male teacher"
     },
     {
       "id": "staff-4",
-      "description": "Portrait of Bilal Shah, Sports Director",
-      "imageUrl": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb3BydHMlMjBjb2FjaHxlbnwwfHx8fDE3NjM4MTE3MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "sports coach"
+      "description": "Portrait of a male teacher in front of a chalkboard",
+      "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYWxlJTIwdGVhY2hlcnxlbnwwfHx8fDE3NjM4MTE2ODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male teacher"
+    },
+    {
+      "id": "staff-5",
+      "description": "Portrait of an IT professional",
+      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpdCUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NjM4MTg4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "IT professional"
+    },
+    {
+      "id": "staff-6",
+      "description": "Portrait of a young male instructor",
+      "imageUrl": "https://images.unsplash.com/photo-1610482594615-18131b79375b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWxlJTIwaW5zdHJ1Y3RvcnxlbnwwfHx8fDE3NjM4MTg4NDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "male instructor"
     }
   ]
 }
