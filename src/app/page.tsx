@@ -74,7 +74,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Image 
-                    src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
+                    src="/ChatGPT Image Nov 25, 2025, 10_24_18 PM.png"
                     alt="Faint background logo"
                     width={500}
                     height={500}
@@ -108,7 +108,7 @@ export default function Home() {
                                 </ul>
                             </div>
                             <div className="relative flex justify-center md:justify-end items-center h-full mt-8 md:mt-0">
-                                <Image src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png" alt="Royal School of Learning Logo" width={350} height={350} className="relative z-10 animate-fade-in-zoom" />
+                                <Image src="/ChatGPT Image Nov 25, 2025, 10_24_18 PM.png" alt="Royal School of Learning Logo" width={350} height={350} className="relative z-10 animate-fade-in-zoom" />
                             </div>
                         </div>
                     </div>
@@ -157,7 +157,7 @@ export default function Home() {
             {/* Why Choose Us Section */}
             <section className="py-20 lg:py-24 bg-slate-50 dark:bg-slate-900/50 relative overflow-hidden">
               <Image
-                src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png"
+                src="/ChatGPT Image Nov 25, 2025, 10_24_18 PM.png"
                 alt="background"
                 fill
                 className="object-contain object-center opacity-5 dark:opacity-10 scale-150"
