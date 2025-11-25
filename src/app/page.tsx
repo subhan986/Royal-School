@@ -40,6 +40,7 @@ const salientFeatures = [
     'Sports Competitions',
     'Excursions & Outings',
     'National & Religious Days Celebrations',
+    'Educational Workshops',
 ];
 
 const Counter = ({ to, duration }: { to: number; duration: number }) => {
