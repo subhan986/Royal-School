@@ -88,42 +88,34 @@ export default function Home() {
         <div className="relative z-10">
             {/* Hero Section */}
             <section className="relative bg-background overflow-hidden">
-              <div className="relative h-[60vh] md:h-[70vh]">
-                <div className="absolute inset-0 bg-background z-0">
-                  <div className="absolute inset-y-0 left-0 w-[40%] bg-secondary animate-slide-in-left" style={{ clipPath: 'ellipse(100% 75% at 0% 50%)' }}></div>
-                  <div className="absolute inset-y-0 left-0 w-[15%] bg-primary animate-slide-in-left" style={{ clipPath: 'ellipse(100% 75% at 0% 50%)', animationDelay: '0.2s' }}></div>
-                  <div className="absolute inset-y-0 right-0 w-1/2 bg-background animate-slide-in-right" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)' }}></div>
-                  <div className="absolute inset-y-0 right-0 w-[20%] bg-yellow-300 animate-slide-in-right" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)', animationDelay: '0.2s' }}></div>
-                  <div className="absolute inset-y-0 right-0 w-[12%] bg-red-500 animate-slide-in-right" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)', animationDelay: '0.4s' }}></div>
-                    <div
-                      className="absolute inset-0"
-                      style={{
-                        backgroundImage:
-                          'radial-gradient(circle at center, rgba(255,255,255,0.1) 1px, transparent 1px)',
-                        backgroundSize: '1rem 1rem',
-                      }}
-                    />
-                </div>
-                <div className="container mx-auto h-full flex items-center relative z-10 px-4">
-                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div className="text-foreground text-center md:text-left">
-                        <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6 font-headline">Salient Features</h2>
-                        <ul className="space-y-3">
-                            {salientFeatures.map((feature, index) => (
-                                <li key={index} className="flex items-center text-lg md:text-xl font-body justify-center md:justify-start">
-                                    <div className="w-2 h-2 rounded-full bg-primary mr-4"></div>
-                                    {feature}
-                                </li>
-                            ))}
-                        </ul>
+                <div className="relative min-h-[60vh] md:h-[70vh] py-12 md:py-0">
+                    <div className="absolute inset-0 bg-background z-0">
+                        <div className="absolute inset-y-0 left-0 w-full md:w-[40%] bg-secondary" style={{ clipPath: 'ellipse(150% 70% at -50% 50%)', animation: 'slide-in-left 1s ease-in-out forwards' }}></div>
+                        <div className="hidden md:block absolute inset-y-0 left-0 w-[15%] bg-primary" style={{ clipPath: 'ellipse(100% 75% at 0% 50%)', animation: 'slide-in-left 1s ease-in-out forwards', animationDelay: '0.2s' }}></div>
+                        <div className="hidden md:block absolute inset-y-0 right-0 w-1/2 bg-background" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)', animation: 'slide-in-right 1s ease-in-out forwards' }}></div>
+                        <div className="hidden md:block absolute inset-y-0 right-0 w-[20%] bg-yellow-300" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)', animation: 'slide-in-right 1s ease-in-out forwards', animationDelay: '0.2s' }}></div>
+                        <div className="hidden md:block absolute inset-y-0 right-0 w-[12%] bg-red-500" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)', animation: 'slide-in-right 1s ease-in-out forwards', animationDelay: '0.4s' }}></div>
                     </div>
-                    <div className="relative flex justify-center md:justify-end items-center h-full">
-                      <div className="absolute w-80 h-80 md:w-96 md:h-96 bg-white/20 rounded-full blur-2xl"></div>
-                      <Image src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png" alt="Royal School of Learning Logo" width={350} height={350} className="relative z-10 animate-fade-in-zoom" />
+                    <div className="container mx-auto h-full flex items-center relative z-10 px-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full">
+                            <div className="text-foreground text-center md:text-left">
+                                <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6 font-headline">Salient Features</h2>
+                                <ul className="space-y-3">
+                                    {salientFeatures.map((feature, index) => (
+                                        <li key={index} className="flex items-center text-lg md:text-xl font-body justify-center md:justify-start">
+                                            <div className="w-2 h-2 rounded-full bg-primary mr-4"></div>
+                                            {feature}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="relative flex justify-center md:justify-end items-center h-full mt-8 md:mt-0">
+                                <div className="absolute w-80 h-80 md:w-96 md:h-96 bg-white/20 rounded-full blur-2xl"></div>
+                                <Image src="/ChatGPT Image Nov 21, 2025, 07_54_18 PM.png" alt="Royal School of Learning Logo" width={350} height={350} className="relative z-10 animate-fade-in-zoom" />
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
               <div className="absolute bottom-0 left-0 right-0 h-16 bg-background rounded-t-full"></div>
             </section>
 
@@ -313,3 +305,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
