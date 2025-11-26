@@ -3,6 +3,7 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
+import React from 'react';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -26,6 +27,23 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { useToast } from '@/hooks/use-toast';
 import { Checkbox } from '../ui/checkbox';
+import { submitApplicationAction } from '@/app/admissions/actions';
+import { Loader2 } from 'lucide-react';
+
+const ACCEPTED_FILE_TYPES = ["image/jpeg", "image/png", "application/pdf"];
+const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
+
+const fileSchema = z
+  .any()
+  .refine((files) => files?.length === 1, "File is required.")
+  .refine(
+    (files) => files?.[0]?.size <= MAX_FILE_SIZE,
+    `Max file size is 5MB.`
+  )
+  .refine(
+    (files) => ACCEPTED_FILE_TYPES.includes(files?.[0]?.type),
+    "Only .jpg, .png, and .pdf formats are supported."
+  );
 
 const formSchema = z.object({
   studentName: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -40,8 +58,8 @@ const formSchema = z.object({
   address: z.string().min(5, 'Address is required.'),
   previousSchool: z.string().optional(),
   
-  birthCertificate: z.any().refine((files) => files?.length == 1, 'Birth certificate is required.'),
-  reportCard: z.any().refine((files) => files?.length == 1, 'Previous report card is required.'),
+  birthCertificate: fileSchema,
+  reportCard: fileSchema,
 
   declaration: z.literal<boolean>(true, {
     errorMap: () => ({ message: "You must accept the terms and conditions" }),
@@ -50,30 +68,58 @@ const formSchema = z.object({
 
 export default function AdmissionForm() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       studentName: '',
       dateOfBirth: '',
+      gender: '',
+      applyingForGrade: '',
       parentName: '',
       parentEmail: '',
       parentPhone: '',
       address: '',
       previousSchool: '',
+      declaration: false,
     },
   });
   
   const birthCertificateRef = form.register("birthCertificate");
   const reportCardRef = form.register("reportCard");
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: 'Application Submitted!',
-      description: 'Your application has been received. We will review it and get back to you soon. Your application ID is 12345.',
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true);
+    const formData = new FormData();
+    
+    // Append all form values to formData
+    Object.entries(values).forEach(([key, value]) => {
+      if (key === 'birthCertificate' || key === 'reportCard') {
+        if (value instanceof FileList && value.length > 0) {
+          formData.append(key, value[0]);
+        }
+      } else if (value !== undefined && value !== null) {
+        formData.append(key, String(value));
+      }
     });
-    form.reset();
+
+    const result = await submitApplicationAction(formData);
+
+    if (result.success) {
+      toast({
+        title: 'Application Submitted!',
+        description: `Your application has been received. Your application ID is ${result.applicationId}.`,
+      });
+      form.reset();
+    } else {
+      toast({
+        variant: 'destructive',
+        title: 'Submission Failed',
+        description: result.error || 'An unknown error occurred.',
+      });
+    }
+    setIsSubmitting(false);
   }
 
   return (
@@ -253,8 +299,9 @@ export default function AdmissionForm() {
                       <FormItem>
                           <FormLabel>Birth Certificate</FormLabel>
                           <FormControl>
-                              <Input type="file" {...birthCertificateRef} />
+                              <Input type="file" accept={ACCEPTED_FILE_TYPES.join(",")} {...birthCertificateRef} />
                           </FormControl>
+                           <FormDescription>PDF, JPG, or PNG. Max 5MB.</FormDescription>
                           <FormMessage />
                       </FormItem>
                   )}
@@ -266,8 +313,9 @@ export default function AdmissionForm() {
                       <FormItem>
                           <FormLabel>Previous Report Card</FormLabel>
                           <FormControl>
-                              <Input type="file" {...reportCardRef} />
+                              <Input type="file" accept={ACCEPTED_FILE_TYPES.join(",")} {...reportCardRef} />
                           </FormControl>
+                          <FormDescription>PDF, JPG, or PNG. Max 5MB.</FormDescription>
                           <FormMessage />
                       </FormItem>
                   )}
@@ -301,8 +349,15 @@ export default function AdmissionForm() {
               )}
             />
             
-            <Button type="submit" size="lg" className="w-full md:w-auto">
-              Submit Application
+            <Button type="submit" size="lg" className="w-full md:w-auto" disabled={isSubmitting}>
+              {isSubmitting ? (
+                <>
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  Submitting...
+                </>
+              ) : (
+                'Submit Application'
+              )}
             </Button>
           </form>
         </Form>
