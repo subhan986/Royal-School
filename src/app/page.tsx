@@ -98,7 +98,7 @@ export default function Home() {
                     <div className="container mx-auto h-full flex items-center relative z-10 px-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full">
                             <div className="text-foreground text-center md:text-left">
-                                <h1 className="text-5xl md:text-6xl font-bold font-headline leading-tight md:leading-snug animate-fade-in-zoom text-muted" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3), -1px -1px 2px rgba(255,255,255,0.1)' }}>
+                                <h1 className="text-5xl md:text-6xl font-bold font-headline leading-tight md:leading-snug animate-fade-in-zoom text-muted" style={{ textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 3px 3px 6px rgba(0,0,0,0.5)' }}>
                                   Learn With Purpose.
                                   <br />
                                   Lead With Confidence.
