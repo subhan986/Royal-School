@@ -98,7 +98,7 @@ export default function Home() {
                     <div className="container mx-auto h-full flex items-center relative z-10 px-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full">
                             <div className="text-foreground text-center md:text-left">
-                                <h1 className="text-6xl md:text-8xl font-bold font-headline leading-tight animate-fade-in-zoom">
+                                <h1 className="text-6xl md:text-8xl font-bold font-headline leading-tight animate-fade-in-zoom bg-gradient-to-r from-primary to-accent-foreground text-transparent bg-clip-text" style={{filter: 'drop-shadow(2px 2px 2px rgba(0,0,0,0.1))'}}>
                                   Learn.
                                   <br />
                                   Grow.
