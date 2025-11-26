@@ -87,7 +87,7 @@ export default function Home() {
         <div className="relative z-10">
             {/* Hero Section */}
             <section className="relative bg-background overflow-hidden">
-                <div className="relative min-h-[60vh] md:h-[70vh] py-12 md:py-0">
+                <div className="relative min-h-[70vh] md:min-h-[70vh] py-12 md:py-0 flex items-center">
                     <div className="absolute inset-0 bg-background z-0">
                         <div className="absolute inset-y-0 left-0 w-full md:w-[40%] bg-secondary" style={{ clipPath: 'ellipse(150% 70% at -50% 50%)' }}></div>
                         <div className="hidden md:block absolute inset-y-0 left-0 w-[15%] bg-primary" style={{ clipPath: 'ellipse(100% 75% at 0% 50%)' }}></div>
