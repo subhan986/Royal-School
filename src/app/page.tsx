@@ -104,17 +104,15 @@ export default function Home() {
                         </div>
                         <div className="relative flex justify-center items-center h-full">
                             <div className="absolute bg-accent/80 w-[80%] h-[70%] rounded-[50%_50%_30%_70%/60%_40%_60%_40%] -rotate-12 blur-2xl opacity-60"></div>
-                            {heroStudentImage && (
-                                <Image 
-                                    src={heroStudentImage.imageUrl}
-                                    alt={heroStudentImage.description}
-                                    width={450} 
-                                    height={560} 
-                                    className="relative z-10 object-contain"
-                                    data-ai-hint={heroStudentImage.imageHint}
-                                    priority
-                                />
-                            )}
+                            <Image 
+                                src="/ChatGPT Image Nov 25, 2025, 10_24_18 PM.png"
+                                alt="Royal School of Learning Logo"
+                                width={400} 
+                                height={400} 
+                                className="relative z-10 object-contain"
+                                data-ai-hint="school logo"
+                                priority
+                            />
                         </div>
                     </div>
                 </div>
@@ -210,8 +208,7 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                   <div>
                     <div className="text-6xl font-bold font-headline"><Counter to={500} duration={2} /></div>
-                    <p className="text-lg font-body mt-2">Students</p>
-                  </div>
+                    <p className="text-lg font-body mt-2">Students</p>                  </div>
                   <div>
                     <div className="text-6xl font-bold font-headline"><Counter to={8} duration={1} /></div>
                     <p className="text-lg font-body mt-2">Branches</p>
