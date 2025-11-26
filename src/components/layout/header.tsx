@@ -81,14 +81,19 @@ export default function Header() {
               key={link.href}
               href={link.href}
               className={cn(
-                'relative px-3 py-2 transition-colors hover:text-primary',
+                'group relative px-3 py-2 transition-colors hover:text-primary',
                  pathname === link.href ? 'text-primary' : 'text-foreground/70'
               )}
             >
               {link.label}
-              {pathname === link.href && (
-                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 w-4 bg-primary rounded-full" />
-              )}
+              <span
+                className={cn(
+                  'absolute bottom-0 left-1/2 h-0.5 bg-primary transition-all duration-300',
+                  pathname === link.href
+                    ? 'w-4 -translate-x-1/2'
+                    : 'w-0 group-hover:w-4 group-hover:-translate-x-1/2'
+                )}
+              />
             </Link>
           ))}
         </nav>
