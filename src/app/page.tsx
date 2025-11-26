@@ -90,7 +90,7 @@ export default function Home() {
             <section className="relative bg-background overflow-hidden">
                 <div className="relative min-h-[70vh] md:min-h-[70vh] py-12 md:py-0 flex items-center">
                     <div className="absolute inset-0 bg-background z-0">
-                        <div className="absolute inset-y-0 left-0 w-full md:w-[40%] bg-secondary" style={{ clipPath: 'ellipse(150% 70% at -55% 50%)' }}></div>
+                        <div className="absolute inset-y-0 left-0 w-full md:w-1/2 bg-secondary" style={{ clipPath: 'ellipse(100% 70% at 0% 50%)' }}></div>
                         <div className="hidden md:block absolute inset-y-0 left-0 w-[15%] bg-primary" style={{ clipPath: 'ellipse(100% 75% at 0% 50%)' }}></div>
                         <div className="hidden md:block absolute inset-y-0 right-0 w-1/2 bg-background" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)' }}></div>
                         <div className="hidden md:block absolute inset-y-0 right-0 w-[20%] bg-yellow-300" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)' }}></div>
@@ -104,7 +104,7 @@ export default function Home() {
                                   <br />
                                   Lead With Confidence.
                                 </h1>
-                                <p className="mt-4 text-lg text-muted/90 max-w-md animate-fade-in-zoom" style={{ animationDelay: '0.2s', textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>
+                                <p className="mt-4 text-lg text-muted/90 max-w-xl animate-fade-in-zoom" style={{ animationDelay: '0.2s', textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>
                                   Royal School of Learning delivers a future-focused education that builds knowledge, character, and leadership.
                                 </p>
                             </div>
@@ -307,5 +307,6 @@ export default function Home() {
     
 
     
+
 
 
