@@ -25,19 +25,19 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
       {/* Top Bar */}
-      <div className="bg-primary text-primary-foreground py-2">
-        <div className="container flex justify-between items-center text-sm px-4">
+      <div className="bg-primary/90 text-primary-foreground py-1.5">
+        <div className="container flex justify-between items-center text-xs px-4">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
-              <Phone size={16} />
+              <Phone size={14} />
               <a href="tel:+92418554850" className="hover:underline">
                 +92 (41) 855 4850
               </a>
             </div>
             <div className="hidden md:flex items-center gap-2">
-              <Mail size={16} />
+              <Mail size={14} />
               <a
                 href="mailto:info@royalschooloflearning.edu"
                 className="hover:underline"
@@ -48,46 +48,47 @@ export default function Header() {
           </div>
           <div className="flex items-center gap-4">
              <a href="#" className="hidden md:flex items-center gap-2 hover:underline">
-                <Book size={16}/>
+                <Book size={14}/>
                 <span>Oakridge Publications</span>
              </a>
             <div className="flex items-center gap-3">
-               <a href="#" aria-label="Facebook" className="hover:opacity-80 transition-opacity"><Facebook size={18}/></a>
-               <a href="#" aria-label="YouTube" className="hover:opacity-80 transition-opacity"><Youtube size={18}/></a>
-               <a href="#" aria-label="Instagram" className="hover:opacity-80 transition-opacity"><Instagram size={18}/></a>
+               <a href="#" aria-label="Facebook" className="hover:opacity-80 transition-opacity"><Facebook size={16}/></a>
+               <a href="#" aria-label="YouTube" className="hover:opacity-80 transition-opacity"><Youtube size={16}/></a>
+               <a href="#" aria-label="Instagram" className="hover:opacity-80 transition-opacity"><Instagram size={16}/></a>
             </div>
           </div>
         </div>
       </div>
 
       {/* Main Navigation */}
-      <div className="container flex h-20 md:h-24 items-center px-4">
+      <div className="container flex h-16 items-center px-4">
         <div className="flex items-center">
           <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/ChatGPT Image Nov 25, 2025, 10_24_18 PM.png"
               alt="Royal School of Learning Logo"
-              width={60}
-              height={60}
-              className="h-14 w-14 md:h-20 md:w-20"
+              width={50}
+              height={50}
+              className="h-12 w-12"
             />
           </Link>
         </div>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium ml-auto">
+        <nav className="hidden md:flex items-center space-x-2 text-sm font-medium ml-auto">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                'transition-colors hover:text-primary pb-1 border-b-2',
-                pathname === link.href
-                  ? 'text-primary border-primary'
-                  : 'text-foreground/60 border-transparent'
+                'relative px-3 py-2 transition-colors hover:text-primary',
+                 pathname === link.href ? 'text-primary' : 'text-foreground/70'
               )}
             >
               {link.label}
+              {pathname === link.href && (
+                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 w-4 bg-primary rounded-full" />
+              )}
             </Link>
           ))}
         </nav>
