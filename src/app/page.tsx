@@ -104,9 +104,6 @@ export default function Home() {
                                   <br />
                                   Lead With Confidence.
                                 </h1>
-                                <p className="mt-4 text-lg text-muted/90 max-w-xl animate-fade-in-zoom" style={{ animationDelay: '0.2s', textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>
-                                  Royal School of Learning delivers a future-focused education that builds knowledge, character, and leadership.
-                                </p>
                             </div>
                             <div className="relative flex justify-center md:justify-end items-center h-full mt-8 md:mt-0">
                                 <Image src="/ChatGPT Image Nov 25, 2025, 10_24_18 PM.png" alt="Royal School of Learning Logo" width={350} height={350} className="relative z-10 animate-fade-in-zoom" />
@@ -310,3 +307,6 @@ export default function Home() {
 
 
 
+
+
+    
