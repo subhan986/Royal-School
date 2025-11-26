@@ -98,15 +98,13 @@ export default function Home() {
                     <div className="container mx-auto h-full flex items-center relative z-10 px-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full">
                             <div className="text-foreground text-center md:text-left">
-                                <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6 font-headline">Salient Features</h2>
-                                <ul className="space-y-3">
-                                    {salientFeatures.map((feature, index) => (
-                                        <li key={index} className="flex items-center text-lg md:text-xl font-body justify-center md:justify-start">
-                                            <div className="w-2 h-2 rounded-full bg-primary mr-4"></div>
-                                            {feature}
-                                        </li>
-                                    ))}
-                                </ul>
+                                <h1 className="text-6xl md:text-8xl font-bold font-headline leading-tight animate-fade-in-zoom">
+                                  Learn.
+                                  <br />
+                                  Grow.
+                                  <br />
+                                  Become.
+                                </h1>
                             </div>
                             <div className="relative flex justify-center md:justify-end items-center h-full mt-8 md:mt-0">
                                 <Image src="/ChatGPT Image Nov 25, 2025, 10_24_18 PM.png" alt="Royal School of Learning Logo" width={350} height={350} className="relative z-10 animate-fade-in-zoom" />
@@ -303,3 +301,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
