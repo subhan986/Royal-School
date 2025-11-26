@@ -98,9 +98,6 @@ export default function Home() {
                                 <Button size="lg" className="font-bold shadow-lg">
                                     Enroll Now
                                 </Button>
-                                <Button variant="ghost" size="icon" className="group">
-                                    <PlayCircle className="h-12 w-12 text-primary group-hover:scale-110 transition-transform" />
-                                </Button>
                             </div>
                         </div>
                         <div className="relative flex justify-center items-center h-full">
@@ -317,4 +314,5 @@ export default function Home() {
 
 
     
+
 
