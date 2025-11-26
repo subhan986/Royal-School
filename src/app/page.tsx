@@ -98,13 +98,14 @@ export default function Home() {
                     <div className="container mx-auto h-full flex items-center relative z-10 px-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full">
                             <div className="text-foreground text-center md:text-left">
-                                <h1 className="text-6xl md:text-8xl font-bold font-headline leading-tight animate-fade-in-zoom bg-gradient-to-r from-primary to-accent-foreground text-transparent bg-clip-text" style={{filter: 'drop-shadow(2px 2px 2px rgba(0,0,0,0.1))'}}>
-                                  Learn.
+                                <h1 className="text-5xl md:text-6xl font-bold font-headline leading-tight animate-fade-in-zoom bg-gradient-to-r from-primary to-accent-foreground text-transparent bg-clip-text" style={{filter: 'drop-shadow(2px 2px 2px rgba(0,0,0,0.1))'}}>
+                                  Learn With Purpose.
                                   <br />
-                                  Grow.
-                                  <br />
-                                  Become.
+                                  Lead With Confidence.
                                 </h1>
+                                <p className="mt-4 text-lg text-muted-foreground max-w-xl animate-fade-in-zoom" style={{ animationDelay: '0.2s' }}>
+                                  Royal School of Learning delivers a future-focused education that builds knowledge, character, and leadership.
+                                </p>
                             </div>
                             <div className="relative flex justify-center md:justify-end items-center h-full mt-8 md:mt-0">
                                 <Image src="/ChatGPT Image Nov 25, 2025, 10_24_18 PM.png" alt="Royal School of Learning Logo" width={350} height={350} className="relative z-10 animate-fade-in-zoom" />
