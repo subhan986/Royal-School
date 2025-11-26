@@ -22,6 +22,7 @@ import {
   Quote,
   Users,
   Award,
+  PlayCircle,
 } from 'lucide-react';
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
@@ -68,54 +69,59 @@ const Counter = ({ to, duration }: { to: number; duration: number }) => {
 };
 
 export default function Home() {
-  const careerImage = PlaceHolderImages.find((img) => img.id === 'career-image');
+  const heroStudentImage = PlaceHolderImages.find((img) => img.id === 'hero-student');
   
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <main className="flex-1 relative">
-        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <Image 
-                    src="/ChatGPT Image Nov 25, 2025, 10_24_18 PM.png"
-                    alt="Faint background logo"
-                    width={500}
-                    height={500}
-                    className="opacity-5"
-                />
-            </div>
-        </div>
-
         <div className="relative z-10">
             {/* Hero Section */}
             <section className="relative bg-background overflow-hidden">
-                <div className="relative min-h-[70vh] md:min-h-[70vh] py-12 md:py-0 flex items-center">
-                    <div className="absolute inset-0 bg-background z-0">
-                        <div className="absolute inset-y-0 left-0 w-full md:w-1/2 bg-secondary" style={{ clipPath: 'ellipse(100% 70% at 0% 50%)' }}></div>
-                        <div className="hidden md:block absolute inset-y-0 left-0 w-[15%] bg-primary" style={{ clipPath: 'ellipse(100% 75% at 0% 50%)' }}></div>
-                        <div className="hidden md:block absolute inset-y-0 right-0 w-1/2 bg-background" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)' }}></div>
-                        <div className="hidden md:block absolute inset-y-0 right-0 w-[20%] bg-yellow-300" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)' }}></div>
-                        <div className="hidden md:block absolute inset-y-0 right-0 w-[12%] bg-red-500" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)' }}></div>
-                    </div>
-                    <div className="container mx-auto h-full flex items-center relative z-10 px-4">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full">
-                            <div className="text-foreground text-center md:text-left">
-                                <h1 className="text-5xl md:text-6xl font-bold font-headline leading-tight md:leading-snug animate-fade-in-zoom text-muted" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>
-                                  Learn With Purpose.
-                                  <br />
-                                  Lead With Confidence.
-                                </h1>
+                <div className="absolute inset-0 z-0 opacity-50">
+                    <div className="absolute -bottom-1/3 -left-1/4 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-200/50 via-transparent to-transparent"></div>
+                    <div className="absolute -top-1/4 -right-1/4 w-3/4 h-3/4 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-rose-100/40 via-transparent to-transparent"></div>
+                    <div className="hidden md:block absolute top-0 left-1/4 w-1/2 h-full rounded-full bg-white/10 blur-3xl"></div>
+                </div>
+                <div className="container mx-auto px-4 relative z-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center min-h-[70vh] py-20 md:py-0">
+                        <div className="text-center md:text-left">
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-headline leading-tight">
+                                Let's Learn New <br />
+                                <span className="text-primary">Course & Gain</span> <br />
+                                More Skills.
+                            </h1>
+                            <p className="mt-6 text-lg text-muted-foreground max-w-md mx-auto md:mx-0">
+                                A learning platform based on practical knowledge with best & world class mentors.
+                            </p>
+                            <div className="mt-8 flex items-center justify-center md:justify-start gap-4">
+                                <Button size="lg" className="font-bold shadow-lg">
+                                    Enroll Now
+                                </Button>
+                                <Button variant="ghost" size="icon" className="group">
+                                    <PlayCircle className="h-12 w-12 text-primary group-hover:scale-110 transition-transform" />
+                                </Button>
                             </div>
-                            <div className="relative flex justify-center md:justify-end items-center h-full mt-8 md:mt-0">
-                                <Image src="/ChatGPT Image Nov 25, 2025, 10_24_18 PM.png" alt="Royal School of Learning Logo" width={350} height={350} className="relative z-10 animate-fade-in-zoom" />
-                            </div>
+                        </div>
+                        <div className="relative flex justify-center items-center h-full">
+                            <div className="absolute bg-accent/80 w-[80%] h-[70%] rounded-[50%_50%_30%_70%/60%_40%_60%_40%] -rotate-12 blur-2xl opacity-60"></div>
+                            {heroStudentImage && (
+                                <Image 
+                                    src={heroStudentImage.imageUrl}
+                                    alt={heroStudentImage.description}
+                                    width={450} 
+                                    height={560} 
+                                    className="relative z-10 object-contain"
+                                    data-ai-hint={heroStudentImage.imageHint}
+                                    priority
+                                />
+                            )}
                         </div>
                     </div>
                 </div>
-              <div className="absolute bottom-0 left-0 right-0 h-16 bg-background rounded-t-full"></div>
             </section>
 
             {/* Your Career Starts With Us Section */}
-            <section className="py-20 lg:py-24 bg-background">
+            <section className="py-20 lg:py-24 bg-card">
               <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                   <div className="text-center md:text-left">
