@@ -103,7 +103,7 @@ export default function Home() {
                                   <br />
                                   Lead With Confidence.
                                 </h1>
-                                <p className="mt-4 text-lg text-muted/90 max-w-xl animate-fade-in-zoom" style={{ animationDelay: '0.2s' }}>
+                                <p className="mt-4 text-lg text-muted/90 max-w-xl animate-fade-in-zoom" style={{ animationDelay: '0.2s', textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 2px 2px 4px rgba(0,0,0,0.5)' }}>
                                   Royal School of Learning delivers a future-focused education that builds knowledge, character, and leadership.
                                 </p>
                             </div>
