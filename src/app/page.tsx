@@ -70,6 +70,7 @@ const Counter = ({ to, duration }: { to: number; duration: number }) => {
 
 export default function Home() {
   const heroStudentImage = PlaceHolderImages.find((img) => img.id === 'hero-student');
+  const schoolBuildingImage = PlaceHolderImages.find((img) => img.id === 'career-image');
   
   return (
     <div className="flex flex-col min-h-screen bg-background">
@@ -133,13 +134,16 @@ export default function Home() {
                     </Button>
                   </div>
                   <div className="relative mt-8 md:mt-0">
+                  {schoolBuildingImage && (
                     <Image
-                      src="/school.png"
-                      alt="A welcoming image of the school building"
+                      src={schoolBuildingImage.imageUrl}
+                      alt={schoolBuildingImage.description}
                       width={700}
                       height={500}
                       className="rounded-lg shadow-2xl object-cover"
+                      data-ai-hint={schoolBuildingImage.imageHint}
                     />
+                  )}
                   </div>
                 </div>
               </div>
@@ -313,3 +317,4 @@ export default function Home() {
 
 
     
+
