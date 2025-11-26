@@ -89,11 +89,11 @@ export default function Home() {
             <section className="relative bg-background overflow-hidden">
                 <div className="relative min-h-[60vh] md:h-[70vh] py-12 md:py-0">
                     <div className="absolute inset-0 bg-background z-0">
-                        <div className="absolute inset-y-0 left-0 w-full md:w-[40%] bg-secondary" style={{ clipPath: 'ellipse(150% 70% at -50% 50%)', animation: 'slide-in-left 1s ease-in-out forwards' }}></div>
-                        <div className="hidden md:block absolute inset-y-0 left-0 w-[15%] bg-primary" style={{ clipPath: 'ellipse(100% 75% at 0% 50%)', animation: 'slide-in-left 1s ease-in-out forwards', animationDelay: '0.2s' }}></div>
-                        <div className="hidden md:block absolute inset-y-0 right-0 w-1/2 bg-background" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)', animation: 'slide-in-right 1s ease-in-out forwards' }}></div>
-                        <div className="hidden md:block absolute inset-y-0 right-0 w-[20%] bg-yellow-300" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)', animation: 'slide-in-right 1s ease-in-out forwards', animationDelay: '0.2s' }}></div>
-                        <div className="hidden md:block absolute inset-y-0 right-0 w-[12%] bg-red-500" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)', animation: 'slide-in-right 1s ease-in-out forwards', animationDelay: '0.4s' }}></div>
+                        <div className="absolute inset-y-0 left-0 w-full md:w-[40%] bg-secondary" style={{ clipPath: 'ellipse(150% 70% at -50% 50%)' }}></div>
+                        <div className="hidden md:block absolute inset-y-0 left-0 w-[15%] bg-primary" style={{ clipPath: 'ellipse(100% 75% at 0% 50%)' }}></div>
+                        <div className="hidden md:block absolute inset-y-0 right-0 w-1/2 bg-background" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)' }}></div>
+                        <div className="hidden md:block absolute inset-y-0 right-0 w-[20%] bg-yellow-300" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)' }}></div>
+                        <div className="hidden md:block absolute inset-y-0 right-0 w-[12%] bg-red-500" style={{ clipPath: 'ellipse(100% 75% at 100% 50%)' }}></div>
                     </div>
                     <div className="container mx-auto h-full flex items-center relative z-10 px-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full">
