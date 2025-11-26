@@ -1,10 +1,47 @@
+
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card } from '@/components/ui/card';
 
-export default function GalleryPage() {
-  const galleryImages = PlaceHolderImages.filter((img) => img.id.startsWith('gallery-full-'));
+const galleryImages = [
+  {
+    id: 'gallery-1',
+    src: '/gallery/gallery1.jpg',
+    description: 'A moment from our school sports day.',
+    hint: 'school sports'
+  },
+  {
+    id: 'gallery-2',
+    src: '/gallery/gallery2.jpg',
+    description: 'Students engaged in a science fair project.',
+    hint: 'science fair'
+  },
+  {
+    id: 'gallery-3',
+    src: '/gallery/gallery3.jpg',
+    description: 'Art class creations on display.',
+    hint: 'art class'
+  },
+  {
+    id: 'gallery-4',
+    src: '/gallery/gallery4.jpg',
+    description: 'Our annual school play performance.',
+    hint: 'school play'
+  },
+  {
+    id: 'gallery-5',
+    src: '/gallery/gallery5.jpg',
+    description: 'The school band performing at an event.',
+    hint: 'school band'
+  },
+  {
+    id: 'gallery-6',
+    src: '/gallery/gallery6.jpg',
+    description: 'Students collaborating in the library.',
+    hint: 'school library'
+  },
+];
 
+export default function GalleryPage() {
   return (
     <div className="container mx-auto px-4 py-16 lg:py-24">
       <div className="text-center mb-12">
@@ -19,12 +56,12 @@ export default function GalleryPage() {
           <Card key={image.id} className="overflow-hidden group shadow-lg">
              <div className="relative aspect-video overflow-hidden">
                 <Image
-                  src={image.imageUrl}
+                  src={image.src}
                   alt={image.description}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  data-ai-hint={image.imageHint}
+                  data-ai-hint={image.hint}
                 />
             </div>
             <div className="p-4 bg-card">
