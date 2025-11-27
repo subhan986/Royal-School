@@ -119,8 +119,8 @@ export default function Home() {
             {/* Your Career Starts With Us Section */}
             <section className="py-20 lg:py-24 bg-card">
               <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                  <div className="text-center md:text-left">
+                <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+                  <div className="lg:col-span-2 text-center lg:text-left">
                     <p className="text-primary font-semibold font-body mb-2">Welcome to The Royal School</p>
                     <h2 className="text-4xl md:text-5xl font-headline font-bold mb-4">Your Career Starts With Us.</h2>
                     <p className="text-muted-foreground font-body text-lg mb-6">
@@ -130,13 +130,13 @@ export default function Home() {
                       <Link href="/admissions">Apply For Admission</Link>
                     </Button>
                   </div>
-                  <div className="relative mt-8 md:mt-0">
+                  <div className="relative mt-8 lg:mt-0 lg:col-span-3">
                     <Image
                       src="/school.jpg"
                       alt="A welcoming image of the school building"
-                      width={700}
-                      height={500}
-                      className="rounded-lg shadow-2xl object-cover"
+                      width={800}
+                      height={600}
+                      className="rounded-lg shadow-2xl object-cover w-full h-auto"
                       data-ai-hint="school building"
                     />
                   </div>
@@ -315,6 +315,8 @@ export default function Home() {
 
 
 
+
+    
 
     
 
