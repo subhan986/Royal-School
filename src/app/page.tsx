@@ -132,7 +132,7 @@ export default function Home() {
                   </div>
                   <div className="relative mt-8 md:mt-0">
                     <Image
-                      src="/school.jpeg"
+                      src="/school.jpg"
                       alt="A welcoming image of the school building"
                       width={700}
                       height={500}
