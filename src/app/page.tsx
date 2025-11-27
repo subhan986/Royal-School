@@ -197,6 +197,33 @@ export default function Home() {
               </div>
             </section>
 
+            {/* Student Life Section */}
+            <section className="py-20 lg:py-24 bg-card">
+              <div className="container mx-auto px-4">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  <div className="relative mt-8 lg:mt-0 lg:col-span-1">
+                    <Image
+                      src="/students.jpg"
+                      alt="A group of happy students"
+                      width={800}
+                      height={600}
+                      className="rounded-lg shadow-2xl object-cover w-full h-auto aspect-[4/3]"
+                      data-ai-hint="happy students"
+                    />
+                  </div>
+                   <div className="lg:col-span-1 text-center lg:text-left">
+                    <h2 className="text-4xl md:text-5xl font-headline font-bold mb-4">A Vibrant Student Life</h2>
+                    <p className="text-muted-foreground font-body text-lg mb-6">
+                      At Royal School of Learning, we believe in holistic development. Our students engage in a variety of academic, artistic, and athletic activities that foster teamwork, creativity, and leadership.
+                    </p>
+                    <Button asChild size="lg" className="font-bold">
+                      <Link href="/gallery">View Gallery</Link>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             {/* RSL Progress Dashboard */}
             <section className="py-20 lg:py-24 bg-primary text-primary-foreground">
               <div className="container mx-auto px-4">
