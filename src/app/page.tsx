@@ -119,8 +119,8 @@ export default function Home() {
             {/* Your Career Starts With Us Section */}
             <section className="py-20 lg:py-24 bg-card">
               <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  <div className="lg:col-span-1 text-center lg:text-left">
+                <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+                  <div className="lg:col-span-2 text-center lg:text-left">
                     <p className="text-primary font-semibold font-body mb-2">Welcome to The Royal School</p>
                     <h2 className="text-4xl md:text-5xl font-headline font-bold mb-4">Your Career Starts With Us.</h2>
                     <p className="text-muted-foreground font-body text-lg mb-6">
@@ -130,7 +130,7 @@ export default function Home() {
                       <Link href="/admissions">Apply For Admission</Link>
                     </Button>
                   </div>
-                  <div className="relative mt-8 lg:mt-0 lg:col-span-1">
+                  <div className="relative mt-8 lg:mt-0 lg:col-span-3">
                     <Image
                       src="/school.jpg"
                       alt="A welcoming image of the school building"
@@ -209,7 +209,7 @@ export default function Home() {
                     <div className="text-6xl font-bold font-headline"><Counter to={500} duration={2} /></div>
                     <p className="text-lg font-body mt-2">Students</p>                  </div>
                   <div>
-                    <div className="text-6xl font-bold font-headline"><Counter to={50} duration={2} /></div>
+                    <div className="text-6xl font-bold font-headline"><Counter to={15} duration={2} /></div>
                     <p className="text-lg font-body mt-2">Dedicated Teachers</p>
                   </div>
                   <div>
