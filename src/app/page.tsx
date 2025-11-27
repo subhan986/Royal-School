@@ -119,8 +119,8 @@ export default function Home() {
             {/* Your Career Starts With Us Section */}
             <section className="py-20 lg:py-24 bg-card">
               <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
-                  <div className="lg:col-span-2 text-center lg:text-left">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  <div className="lg:col-span-1 text-center lg:text-left">
                     <p className="text-primary font-semibold font-body mb-2">Welcome to The Royal School</p>
                     <h2 className="text-4xl md:text-5xl font-headline font-bold mb-4">Your Career Starts With Us.</h2>
                     <p className="text-muted-foreground font-body text-lg mb-6">
@@ -130,13 +130,13 @@ export default function Home() {
                       <Link href="/admissions">Apply For Admission</Link>
                     </Button>
                   </div>
-                  <div className="relative mt-8 lg:mt-0 lg:col-span-3">
+                  <div className="relative mt-8 lg:mt-0 lg:col-span-1">
                     <Image
                       src="/school.jpg"
                       alt="A welcoming image of the school building"
                       width={800}
                       height={600}
-                      className="rounded-lg shadow-2xl object-cover w-full h-auto"
+                      className="rounded-lg shadow-2xl object-cover w-full h-auto aspect-[4/3]"
                       data-ai-hint="school building"
                     />
                   </div>
@@ -220,66 +220,6 @@ export default function Home() {
               </div>
             </section>
 
-            {/* RSL News & Events */}
-            <section className="py-20 lg:py-32">
-              <div className="container mx-auto px-4">
-                <h2 className="text-4xl md:text-5xl font-headline font-bold text-center mb-16">
-                  RSL News & Events
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {MOCK_NEWS.slice(0, 3).map((item) => {
-                    const newsImage = PlaceHolderImages.find(
-                      (img) => img.id === item.imageId
-                    );
-                    return (
-                      <Card
-                        key={item.id}
-                        className="overflow-hidden flex flex-col group shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg border-0"
-                      >
-                        {newsImage && (
-                          <div className="relative w-full h-56 overflow-hidden">
-                            <Image
-                              src={newsImage.imageUrl}
-                              alt={newsImage.description}
-                              fill
-                              className="object-cover transition-transform duration-500 group-hover:scale-105"
-                              data-ai-hint={newsImage.imageHint}
-                            />
-                          </div>
-                        )}
-                         <CardContent className="pt-6 flex-grow">
-                          <h3 className="font-headline text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-                            {item.title}
-                          </h3>
-                          <p className="text-muted-foreground line-clamp-3 font-body text-sm">
-                            {item.content}
-                          </p>
-                        </CardContent>
-                        <div className="p-6 pt-0">
-                          <Button
-                            asChild
-                            variant="link"
-                            className="p-0 h-auto font-bold text-sm"
-                          >
-                            <Link href="/news">
-                              Read More <ArrowRight className="ml-1 h-4 w-4" />
-                            </Link>
-                          </Button>
-                        </div>
-                      </Card>
-                    );
-                  })}
-                </div>
-                <div className="text-center mt-16">
-                  <Button asChild size="lg" variant="outline" className="font-bold">
-                    <Link href="/news">
-                      View All News
-                    </Link>
-                  </Button>
-                </div>
-              </div>
-            </section>
-
             {/* What People Say */}
             <section className="py-20 lg:py-24 bg-slate-50 dark:bg-slate-900/50">
               <div className="container mx-auto px-4">
@@ -302,22 +242,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
-
-    
-
-
-
-
-
-    
-
-
-
-
-    
-
-    
-
-    
