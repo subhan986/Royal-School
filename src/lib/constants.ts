@@ -2,7 +2,6 @@
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/admissions', label: 'Admissions' },
-  { href: '/news', label: 'News & Events' },
   { href: '/gallery', label: 'Gallery' },
   { href: '/staff', label: 'Staff' },
 ];
