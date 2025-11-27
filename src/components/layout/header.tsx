@@ -61,15 +61,15 @@ export default function Header() {
       </div>
 
       {/* Main Navigation */}
-      <div className="container flex h-16 items-center px-4">
+      <div className="container flex h-20 items-center px-4">
         <div className="flex items-center">
           <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/ChatGPT Image Nov 25, 2025, 10_24_18 PM.png"
               alt="Royal School of Learning Logo"
-              width={50}
-              height={50}
-              className="h-12 w-12"
+              width={60}
+              height={60}
+              className="h-16 w-16"
             />
           </Link>
         </div>
